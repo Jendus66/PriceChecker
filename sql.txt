@@ -1,0 +1,27 @@
+create table pc_records(
+record_id integer not null auto_increment,
+product_id integer,
+url varchar(500),
+actual_price integer,
+datum date,
+primary key (record_id),
+foreign key (product_id) references pc_min_price(product_id)
+);
+
+create table pc_min_price(
+product_id integer not null auto_increment,
+product varchar(20),
+price integer,
+datum date,
+email varchar(40),
+active boolean,
+primary key (product_id)
+);
+
+create table pc_mail_sent(
+receiver varchar(30),
+datum date,
+shop varchar(30),
+product varchar(30),
+price integer
+);

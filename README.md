@@ -2,11 +2,11 @@
 
 PriceChecker is a Python script, which checks products urls saved in a database and scrap their prices. If the scrapped price is lower than set price (limit price for buying) then the script sends email or notification to smartphone via Pushover app.
 
-![Screenshot](notification.jpg)
+![Screenshot](notification2.jpg)
 
 **Database**
 
-There need to be 3 tables in the database for the python script. SQL queries for tables create are in file sql.txt
+There need to be 3 tables in the database for the python script. SQL queries for tables create are in file sql.txt<br />
 
 **1) pc_min_price**<br />
 Table pc_min_price contains all the products for which prices will be scrapped. Columns:<br />
@@ -40,8 +40,8 @@ f) price - product price on the eshop for which was notification sent<br />
 
 ![Screenshot](pc_mail_sent.png)
 
-**price_check_db_gt.py**
-The python script for the prices scrapping from the individual eshops websites. The script has these steps:<br />
+**price_check_db_gt.py**<br />
+The python script for the prices scrapping from the individual eshops websites. The script has these steps:
 1) Gets active products and their urls from the database<br />
 2) Gets the current product price from the urls<br />
 3) Update the current price in the database (table pc_records)<br />

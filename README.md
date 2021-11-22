@@ -1,6 +1,6 @@
 # PriceChecker
 
-PriceChecker is a Python script, which checks products urls saved in a database and scrap their prices. If the scrapped price is lower than set price (limit price for buying) then the script sends email or notification to smartphone via Pushover app.
+PriceChecker is a Python script, which checks products urls saved in a database and scrapes their prices. If the scrapped price is lower than set price (limit price for buying) then the script sends email or notification to smartphone via Pushover app.
 
 ![Screenshot](notification2.jpg)
 
